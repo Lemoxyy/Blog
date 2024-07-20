@@ -3,7 +3,7 @@
     src: url(./fonts/Kawaii.otf);
 }
 @font-face {
-    font-family: hand;
+    font-family: handwriting;
     src: url(./fonts/Handwriting.ttf);
 }
 @font-face {
@@ -27,7 +27,7 @@ body{
 
 #blog{
     font-size: 14px;
-    font-family: hand;
+    font-family: handwriting;
     text-align: center;
 }
 
