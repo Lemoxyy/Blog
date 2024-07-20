@@ -3,6 +3,10 @@
     src: url(./fonts/Kawaii.otf);
 }
 @font-face {
+    font-family: hand;
+    src: url(./fonts/Handwriting.ttf);
+}
+@font-face {
     font-family: blog;
     src: url(./fonts/The\ Sunday.otf);
 }
@@ -23,10 +27,11 @@ body{
 
 #blog{
     font-size: 14px;
-    font-family: blog;
+    font-family: hand;
     text-align: center;
 }
 
 #insa{
     height: 15px;
+    border-radius: 10px 10px 10px 10px;
 }
