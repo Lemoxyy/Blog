@@ -7,8 +7,8 @@
     src: url(./fonts/The\ Sunday.otf);
 }
 #head1 {
-    font-family: kawai;
     text-align: center;
+    font-family: kawai;
     font-weight: 200;
     font-size: 3em; 
     /* text-decoration: underline; */
