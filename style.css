@@ -35,3 +35,10 @@ body{
     height: 15px;
     border-radius: 10px 10px 10px 10px;
 }
+
+#follow-btn-home1{
+    border-radius: 20px 20px 20px 20px;
+    font-family: blog;
+    background-color: black;
+    color: greenyellow;
+}
