@@ -39,6 +39,7 @@ body{
 #follow-btn-home1{
     border-radius: 20px 20px 20px 20px;
     font-family: blog;
+    display:block;
     background-color: black;
     color: greenyellow;
     position: absolute;
@@ -47,6 +48,7 @@ body{
 #buy-coffee{
     border-radius: 20px 20px 20px 20px;
     font-family: blog;
+    display:block;
     background-color: black;
     color: greenyellow;
     position: absolute;
