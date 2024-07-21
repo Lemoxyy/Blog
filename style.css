@@ -41,5 +41,17 @@ body{
     font-family: blog;
     background-color: black;
     color: greenyellow;
+    position: absolute;
+    left: 397px;
+}
+#buy-coffee{
+    border-radius: 20px 20px 20px 20px;
+    font-family: blog;
+    background-color: black;
+    color: greenyellow;
+    position: absolute;
+    left: 375px;
+    position: relative;
+    top: 45px;
 }
 
