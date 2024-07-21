@@ -12,7 +12,7 @@
 }
 #box1{
     height: 300px;
-    width: 350px;
+    width: 300px;
     background-color: #bbc5aa;
     border-radius: 20px 20px 20px 20px;
     position: fixed;
@@ -33,7 +33,60 @@ body{
     outline: none;
     position: relative;
     top: 40px;
-    left: 20px;
+    left: 92px;
+    font-family: handwriting;
+    background-color: #bbc5aa  ;
+    font-size: 25px;
+
+}
+
+#insta-btn{
+    border: none;
+    /* text-decoration: none; */
+    display: inline-block;
+    outline: none;
+    position: relative;
+    top: 67px;
+    left: 90px;
+    font-family: handwriting;
+    background-color: #bbc5aa  ;
+    font-size: 25px;
+
+}
+#x-btn{
+    border: none;
+    /* text-decoration: none; */
+    display: inline-block;
+    outline: none;
+    position: relative;
+    top: 87px;
+    left: 140px;
+    font-family: handwriting;
+    background-color: #bbc5aa  ;
+    font-size: 25px;
+
+}
+#thread-btn{
+     border: none; 
+    /* text-decoration: none; */
+    display: inline-block;
+    outline: none;
+    position: relative;
+    top: 110px;
+    left: 100px;
+    font-family: handwriting;
+    background-color: #bbc5aa  ;
+    font-size: 25px;
+
+}
+#discord-btn{
+    border: none;
+    /* text-decoration: none; */
+    display: inline-block;
+    outline: none;
+    position: relative;
+    top: 130px;
+    left: 108px;
     font-family: handwriting;
     background-color: #bbc5aa  ;
     font-size: 25px;
@@ -42,6 +95,23 @@ body{
 #fb-btn:hover{
     background-color: aliceblue;
 }
+#x-btn:hover{
+    background-color: aliceblue;
+}
+
+#insta-btn:hover{
+    background-color: aliceblue;
+}
+
+#thread-btn:hover{
+    background-color: aliceblue;
+}
+
+#discord-btn:hover{
+    background-color: aliceblue;
+}
+
+
 
  #time {
     /* align-items: left; */
