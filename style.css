@@ -1,3 +1,7 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 @font-face {
     font-family: kawai;
     src: url(./fonts/Kawaii.otf);
@@ -15,6 +19,7 @@
     font-family: kawai;
     font-weight: 200;
     font-size: 3em; 
+    padding-top: 20px;
     /* text-decoration: underline; */
 }
 
@@ -40,6 +45,7 @@ body{
     border-radius: 20px 20px 20px 20px;
     font-family: blog;
     /* display:block; */
+    /* display: inline-block; */
     background-color: black;
     color: greenyellow;
     position: absolute;
@@ -48,7 +54,8 @@ body{
 #buy-coffee{
     border-radius: 20px 20px 20px 20px;
     font-family: blog;
-    /* display:block; */
+    /* display:block; */    
+    /* display: inline-block; */
     background-color: black;
     color: greenyellow;
     position: absolute;
@@ -58,6 +65,6 @@ body{
 }
 #boxes{
     position: relative;
-    left: 200px; 
+    left: 180px; 
 }
 
