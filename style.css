@@ -65,4 +65,7 @@ body{
     position: relative;
     left: 180px; 
 }
-
+#milk {
+    height: 100px;
+    width: 100px;
+}
