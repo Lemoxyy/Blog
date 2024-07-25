@@ -48,8 +48,8 @@ body{
     /* display: inline-block; */
     background-color: black;
     color: greenyellow;
-    position: absolute;
-    left: 397px;
+    /* position: absolute;
+    left: 397px; */
 }
 #buy-coffee{
     border-radius: 20px 20px 20px 20px;
@@ -58,10 +58,8 @@ body{
     /* display: inline-block; */
     background-color: black;
     color: greenyellow;
-    position: absolute;
-    left: 380px;
-    position: relative;
-    top: 45px;
+    /* position: absolute;
+    left: 380px; */
 }
 #boxes{
     position: relative;
