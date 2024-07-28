@@ -40,8 +40,14 @@ body{
     height: 15px;
     border-radius: 10px 10px 10px 10px;
 }
+#btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-#follow-btn-home1{
+
+#followbtn{
     border-radius: 20px 20px 20px 20px;
     font-family: blog;
     /* display:block; */
@@ -51,7 +57,7 @@ body{
     /* position: absolute;
     left: 397px; */
 }
-#buy-coffee{
+#buycoffee{
     border-radius: 20px 20px 20px 20px;
     font-family: blog;
     /* display:block; */    
@@ -61,11 +67,13 @@ body{
     /* position: absolute;
     left: 380px; */
 }
-#boxes{
+/* #boxes{
     position: relative;
     left: 180px; 
-}
-#milk {
+    text-align: center;
+    display: block;
+} */
+/* #milk {
     height: 100px;
     width: 100px;
-}
+} */
