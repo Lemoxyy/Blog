@@ -116,7 +116,7 @@ body{
  #time {
     /* align-items: left; */
     position: absolute;
-    left: 90%;
+    left: 9em;
     font-family: cutesy;
     font-size: 3em;
     color: white    ;
