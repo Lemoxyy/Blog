@@ -15,8 +15,8 @@
     src: url(./fonts/COURIERTXT.ttf);
 }
 #box1{
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
     background-color: #bbc5aa;
     border-radius: 20px 20px 20px 20px;
     position: fixed;
