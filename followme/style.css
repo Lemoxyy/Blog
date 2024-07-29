@@ -1,3 +1,7 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 @font-face {
     font-family: handwriting;
     src: url(./fonts/Handwriting.ttf);
