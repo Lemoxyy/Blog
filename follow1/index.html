@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="style.scss" /> -->
     <title>Follow Me</title>
     <style>
       * {
@@ -18,87 +19,82 @@
         color: whitesmoke;
       }
       /* #insta {
-        cursor: pointer;
-        width: 60px;
-        height: 60px;
-        border-radius: 20px;
-        margin-top: 50px;
-        margin-left: 50px;
-      }
-      #face {
-        cursor: pointer;
-        width: 60px;
-        height: 60px;
-        border-radius: 20px;
-        margin-top: 50px;
-        margin-left: 50px;
-      } */
-      #social-head {
-        margin-top: 50px;
-        margin-left: 30px;
-        font-size: 45px;
-        font-family: sign;
-      }
-      /*
-      .card {
-        cursor: pointer;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        transition: all 0.3s ease-in-out;
-      }
-      .card:hover {
-        transform: translateY(-15px);
-      }
-      .social-head:hover > :not(:hover) {
-        opacity: 0.5;
-      }
+              cursor: pointer;
+              width: 60px;
+              height: 60px;
+              border-radius: 20px;
+              margin-top: 50px;
+              margin-left: 50px;
+            }
+            #face {
+              cursor: pointer;
+              width: 60px;
+              height: 60px;
+              border-radius: 20px;
+              margin-top: 50px;
+              margin-left: 50px;
+            } */
 
-      #git {
-        cursor: pointer;
-        width: 60px;
-        height: 60px;
-        border-radius: 20px;
-        margin-top: 50px;
-        margin-left: 50px;
-      }
-      #stack {
-        cursor: pointer;
-        width: 60px;
-        height: 60px;
-        border-radius: 20px;
-        margin-top: 50px;
-        margin-left: 50px;
-      }
-      #reddit {
-        cursor: pointer;
-       
-      }
-      #thread {
-        cursor: pointer;
-        width: 60px;
-        height: 60px;
-        border-radius: 20px;
-        margin-top: 50px;
-        margin-left: 50px;
-        background-color: white;
-      }
-      #X {
-        cursor: pointer;
-        width: 60px;
-        height: 60px;
-        border-radius: 20px;
-        margin-top: 50px;
-        margin-left: 50px;
-        background-color: white;
-      }
-      #pin {
-        cursor: pointer;
-        width: 60px;
-        height: 60px;
-        border-radius: 20px;
-        margin-top: 50px;
-        margin-left: 50px;
-        background-color: white;
-      } */
+      /*
+            .card {
+              cursor: pointer;
+              box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+              transition: all 0.3s ease-in-out;
+            }
+            .card:hover {
+              transform: translateY(-15px);
+            }
+            .social-head:hover > :not(:hover) {
+              opacity: 0.5;
+            }
+
+            #git {
+              cursor: pointer;
+              width: 60px;
+              height: 60px;
+              border-radius: 20px;
+              margin-top: 50px;
+              margin-left: 50px;
+            }
+            #stack {
+              cursor: pointer;
+              width: 60px;
+              height: 60px;
+              border-radius: 20px;
+              margin-top: 50px;
+              margin-left: 50px;
+            }
+            #reddit {
+              cursor: pointer;
+
+            }
+            #thread {
+              cursor: pointer;
+              width: 60px;
+              height: 60px;
+              border-radius: 20px;
+              margin-top: 50px;
+              margin-left: 50px;
+              background-color: white;
+            }
+            #X {
+              cursor: pointer;
+              width: 60px;
+              height: 60px;
+              border-radius: 20px;
+              margin-top: 50px;
+              margin-left: 50px;
+              background-color: white;
+            }
+            #pin {
+              cursor: pointer;
+              width: 60px;
+              height: 60px;
+              border-radius: 20px;
+              margin-top: 50px;
+              margin-left: 50px;
+              background-color: white;
+            } */
 
       .card-container {
         display: grid;
@@ -108,6 +104,7 @@
         justify-content: center;
         align-items: center;
         justify-content: space-evenly;
+        margin-top: 50px;
       }
 
       .card1 {
@@ -257,10 +254,46 @@
       .card-container:hover > :not(:hover) {
         opacity: 0.5;
       }
+      body {
+        background: #111;
+      }
+      /*
+      .hidden {
+        opacity: 0;
+      } */
+      .console-container {
+        font-family: sign;
+        font-size: 30px;
+        text-align: left;
+        margin-top: 40px;
+        /* margin-right: 20px; */
+        position: absolute;
+        left: 20px;
+        /*
+        display: block;
+        position: absolute;
+        color: white;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto; */
+      }
+      .console-underscore {
+        display: inline-block;
+        position: relative;
+        top: -0.14em;
+        left: 10px;
+      }
     </style>
   </head>
   <body>
-    <h2 id="social-head">Socials :</h2>
+    <div class="console-container">
+      <span id="text"></span>
+      <div class="console-underscore" id="console">&#95;</div>
+    </div>
+
+    <h2 id="social-head"></h2>
     <br /><br /><br />
     <!-- <div class="social">
     
@@ -338,5 +371,61 @@
         <div class="card8"></div>
       </a>
     </div>
+    <br />
+    <br />
+    <script>
+      consoleText(["Check out ", "My Social", "Handles'"], "text", [
+        "tomato",
+        "rebeccapurple",
+        "lightblue",
+      ]);
+
+      function consoleText(words, id, colors) {
+        if (colors === undefined) colors = ["#fff"];
+        var visible = true;
+        var con = document.getElementById("social-head");
+        var letterCount = 1;
+        var x = 1;
+        var waiting = false;
+        var target = document.getElementById(id);
+        target.setAttribute("style", "color:" + colors[0]);
+        window.setInterval(function () {
+          if (letterCount === 0 && waiting === false) {
+            waiting = true;
+            target.innerHTML = words[0].substring(0, letterCount);
+            window.setTimeout(function () {
+              var usedColor = colors.shift();
+              colors.push(usedColor);
+              var usedWord = words.shift();
+              words.push(usedWord);
+              x = 1;
+              target.setAttribute("style", "color:" + colors[0]);
+              letterCount += x;
+              waiting = false;
+            }, 1000);
+          } else if (letterCount === words[0].length + 1 && waiting === false) {
+            waiting = true;
+            window.setTimeout(function () {
+              x = -1;
+              letterCount += x;
+              waiting = false;
+            }, 1000);
+          } else if (waiting === false) {
+            target.innerHTML = words[0].substring(0, letterCount);
+            letterCount += x;
+          }
+        }, 120);
+        window.setInterval(function () {
+          if (visible === true) {
+            con.className = "console-underscore hidden";
+            visible = false;
+          } else {
+            con.className = "console-underscore";
+
+            visible = true;
+          }
+        }, 400);
+      }
+    </script>
   </body>
 </html>
