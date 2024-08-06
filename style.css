@@ -50,78 +50,90 @@ body {
   font-family: sign;
   src: url(./Magicalnotes.ttf);
 }
-.nav {
-  /* background-color: transparent; */
-  /* color: white; */
-  overflow: hidden;
-  margin-bottom: 35em;
-  /* font-size: 1em; */
-  position: relative;
-  left: 23%;
-  /* size: 500px; */
-}
-.nav a {
-  /* font-family: font1; */
-  font-weight: 500;
-  text-transform: uppercase;
-  font-style: normal;
-  font: 14px/28px D-DIN-Bold, Arial, Verdana, sans-serif;
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 25px;
-  text-decoration: none;
-  font-size: 20px;
-}
-.nav a:hover {
-  opacity: 0.3;
+header {
+  background-color: transparent;
 }
 
-.nav a:active {
-  box-shadow: white;
-}
-#copyright {
-  color: white;
-  position: relative;
-  left: 250px;
-  top: 300px;
-}
-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  flex-direction: column;
-}
-
-h1 {
-  font-family: montserrat;
-  font-size: 40px;
+li {
+  list-style: none;
 }
 
 a {
-  font-family: Montserrat;
-  position: relative;
+  color: white;
   text-decoration: none;
 }
 
-a:after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  display: block;
-  margin-top: 0px;
-  left: 0%;
-  background: white;
-  transition: width 0.3s ease;
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
 }
 
-a:hover:after {
-  width: 100%;
-  left: 0%;
-  background: white;
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav-branding {
+  font-size: 2rem;
+}
+
+.nav-link {
+  transition: 0.7s ease;
+}
+
+.nav-link:hover {
+  opacity: 0.3;
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .hamburger:active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger:active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger:active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: transparent;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .nav-item {
+    margin: 16px 0;
+  }
+  .nav-menu.hamburger.active {
+    left: 0;
+  }
 }
 
 .cursor {
