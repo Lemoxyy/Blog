@@ -12,7 +12,7 @@ document.querySelectorAll(".nav-link").forEach((n) =>
     navMenu.classList.remove("active");
   })
 );
-
+console.log("Lemoxyy");
 var cursor = document.querySelector(".cursor");
 var cursorinner = document.querySelector(".cursor2");
 var a = document.querySelectorAll("a");
