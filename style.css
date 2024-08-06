@@ -2,102 +2,91 @@
   padding: 0;
   margin: 0;
 }
-@font-face {
-  font-family: kawai;
-  src: url(./fonts/Kawaii.otf);
-}
-@font-face {
-  font-family: handwriting;
-  src: url(./fonts/Handwriting.ttf);
-}
-@font-face {
-  font-family: blog;
-  src: url(./fonts/The\ Sunday.otf);
-}
-#head1 {
-  text-align: center;
-  font-family: kawai;
-  font-weight: 200;
-  font-size: 3em;
-  padding-top: 20px;
-  /* text-decoration: underline; */
-}
-
 body {
-  background-color: black;
-  color: whitesmoke;
-}
-/* #logo{
-    border: 20px 20px 20px 20px;
-} */
-
-#blog {
-  font-size: 14px;
-  font-family: handwriting;
-  text-align: center;
-}
-
-#insa {
-  height: 15px;
-  border-radius: 10px 10px 10px 10px;
-}
-#btn {
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-left:  50px;   */
+  height: 100vh;
+  background-color: #000;
 }
 
-#followbtn {
-  cursor: pointer;
-  /* border-radius: 20px 20px 20px 20px; */
-  border: none;
-  font-family: blog;
-  /* display:block; */
-  /* display: inline-block; */
-  background-color: transparent;
-  color: white;
-  /* position: absolute;
-    left: 397px; */
+#main {
+  position: relative;
+  font-family: font;
+  text-transform: uppercase;
+  font-size: 4em;
+  text-align: center;
+  font-weight: 5%;
+  position: relative;
+  left: 200px;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
-#followbtn:hover {
-  opacity: 0.8;
+@font-face {
+  font-family: font;
+  src: url(./fonts/Kawai\ Animal.otf);
 }
-#followbtn:active {
-  box-shadow: rgba(206, 206, 206, 0.5);
-  /* animation: forwards; */
+@font-face {
+  font-family: font1;
+  src: url(./fonts/KawaiMandala.otf);
 }
-#buycoffee {
-  margin-left: -14px;
-  margin-top: 30px;
-  cursor: pointer;
-  /* border-radius: 20px 20px 20px 20px; */
-  border: none;
-  font-family: blog;
-  /* display:block; */
-  /* display: inline-block; */
-  background-color: transparent;
-  color: white;
-  /* position: absolute;
-    left: 380px; */
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
 }
-#buycoffee:hover {
-  opacity: 0.8;
+@font-face {
+  font-family: sign;
+  src: url(./Magicalnotes.ttf);
 }
-#buycoffe:active {
-  box-shadow: rgba(206, 206, 206, 0.5);
+.nav {
+  /* background-color: transparent; */
+  /* color: white; */
+  overflow: hidden;
+  margin-bottom: 35em;
+  /* font-size: 1em; */
+  position: relative;
+  left: 23%;
+  /* size: 500px; */
 }
-/* #boxes{
-    position: relative;
-    left: 180px; 
-    text-align: center;
-    display: block;
-} */
-/* #milk {
-    height: 100px;
-    width: 100px;
-} */
+.nav a {
+  /* font-family: font1; */
+  font-weight: 500;
+  text-transform: uppercase;
+  font-style: normal;
+  font: 14px/28px D-DIN-Bold, Arial, Verdana, sans-serif;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 25px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.nav a:hover {
+  opacity: 0.3;
+}
 
+.nav a:active {
+  box-shadow: white;
+}
+#copyright {
+  color: white;
+  position: relative;
+  left: 250px;
+  top: 300px;
+}
 section {
   display: flex;
   justify-content: center;
@@ -161,7 +150,7 @@ a:hover:after {
 }
 
 .hover {
-  background-color: red;
+  background-color: transparent;
   opacity: 0.5;
 }
 
