@@ -68,6 +68,11 @@ a {
   transition: all 0.3s ease-in-out;
   background-color: white;
 }
+@media (max-width: 768px) {
+  body {
+    cursor: none;
+  }
+}
 
 @media (max-width: 768px) {
   .hamburger {
