@@ -38,6 +38,7 @@ a.forEach((item) => {
     cursor.classList.remove("hover");
   });
 });
+
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 

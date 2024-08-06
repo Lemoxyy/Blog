@@ -1,54 +1,10 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #000;
-}
-
-#main {
-  position: relative;
-  font-family: font;
-  text-transform: uppercase;
-  font-size: 4em;
-  text-align: center;
-  font-weight: 5%;
-  position: relative;
-  left: 200px;
-  letter-spacing: 4px;
-  overflow: hidden;
-  background: linear-gradient(90deg, #000, #fff, #000);
-  background-repeat: no-repeat;
-  background-size: 80%;
-  animation: animate 3s linear infinite;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(255, 255, 255, 0);
-}
-@font-face {
-  font-family: font;
-  src: url(./fonts/Kawai\ Animal.otf);
-}
-@font-face {
-  font-family: font1;
-  src: url(./fonts/KawaiMandala.otf);
-}
-@keyframes animate {
-  0% {
-    background-position: -500%;
-  }
-  100% {
-    background-position: 500%;
-  }
-}
-@font-face {
-  font-family: sign;
-  src: url(./Magicalnotes.ttf);
+  background-color: black;
 }
 header {
   background-color: transparent;
@@ -134,40 +90,4 @@ a {
   .nav-menu.hamburger.active {
     left: 0;
   }
-}
-
-.cursor {
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
-  border: 1px solid white;
-  transition: all 200ms ease-out;
-  position: fixed;
-  pointer-events: none;
-  left: 0;
-  top: 0;
-  transform: translate(calc(-50% + 15px), -50%);
-}
-
-.cursor2 {
-  width: 8px;
-  height: 8px;
-  border-radius: 100%;
-  background-color: white;
-  /* opacity: 0.3; */
-  position: fixed;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  transition: width 0.3s, height 0.3s, opacity 0.3s;
-}
-
-.hover {
-  background-color: transparent;
-  opacity: 0.5;
-}
-
-.cursorinnerhover {
-  width: 50px;
-  height: 50px;
-  opacity: 0.5;
 }
