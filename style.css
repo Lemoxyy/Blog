@@ -3,6 +3,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: font1;
+  src: url(/fonts/Kawai\ Animal.otf);
+}
 body {
   background-color: black;
 }
@@ -17,6 +21,7 @@ li {
 a {
   color: white;
   text-decoration: none;
+  font: 14px / 28px D-DIN-Bold, Arial, Verdana, sans-serif;
 }
 
 .navbar {
@@ -36,6 +41,7 @@ a {
 
 .nav-branding {
   font-size: 2rem;
+  font-family: font1;
 }
 
 .nav-link {
@@ -58,7 +64,32 @@ a {
   transition: all 0.3s ease-in-out;
   background-color: white;
 }
-
+a {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: white;
+  transition: width 0.4s ease;
+  -webkit-transition: width 0.4s ease;
+}
+a:hover::after {
+  width: 100%;
+  left: 0;
+  background: white;
+}
 @media (max-width: 768px) {
   .hamburger {
     display: block;
