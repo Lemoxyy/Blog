@@ -5,7 +5,7 @@
 }
 @font-face {
   font-family: font1;
-  src: url(/fonts/Kawai\ Animal.otf);
+  src: url(/fonts/carbon.ttf);
 }
 body {
   background-color: black;
@@ -41,8 +41,11 @@ a {
 }
 
 .nav-branding {
-  font-size: 2rem;
-  font-family: font1;
+  font-size: 5em;
+  /* font-family: font1;
+  
+  font-weight: -2px; */
+  font: 30px / 32px D-DIN-Bold, Arial, Verdana, sans-serif;
 }
 
 .nav-link {
