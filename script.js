@@ -59,7 +59,7 @@ function openWebsite() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  const text = "This website hasn't been completed yet.";
+  const text = `This website hasn't been completed yet.`;
   const typingText = document.getElementById("development");
   let index = 0;
 
