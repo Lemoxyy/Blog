@@ -68,7 +68,7 @@ a {
   transition: all 0.3s ease-in-out;
   background-color: white;
 }
-@media (max-width: 768px) {
+@media (pointer: coarse) {
   body {
     cursor: none;
   }
