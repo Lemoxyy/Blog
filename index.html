@@ -34,6 +34,24 @@
         </div>
       </nav>
     </header>
-    <script src="./script.js"></script>
+    <script src="./script.js">
+
+      let timeout;
+
+      function hideCursor() {
+          document.body.classList.add('hide-cursor');
+      }
+
+      function resetTimer() {
+          document.body.classList.remove('hide-cursor');
+          clearTimeout(timeout);
+          timeout = setTimeout(hideCursor, 3000);  // 3 seconds of inactivity
+      }
+
+      document.onmousemove = resetTimer;
+      document.onkeypress = resetTimer;
+
+      resetTimer();  // Initialize timer
+    </script>
   </body>
 </html>

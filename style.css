@@ -103,6 +103,9 @@ a {
     left: 0;
   }
 }
+body.hide-cursor {
+  cursor: none;
+}
 a {
   display: inline-block;
   position: relative;
