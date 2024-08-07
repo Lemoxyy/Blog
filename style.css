@@ -42,9 +42,7 @@ a {
 
 .nav-branding {
   font-size: 5em;
-  /* font-family: font1;
-  
-  font-weight: -2px; */
+  letter-spacing: 7px;
   font: 30px / 32px D-DIN-Bold, Arial, Verdana, sans-serif;
 }
 
