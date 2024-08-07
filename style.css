@@ -167,3 +167,27 @@ a:hover::after {
   height: 50px;
   opacity: 0.5;
 }
+
+#development {
+  text-align: center;
+  font: 30px / 32px D-DIN-Bold, Arial, Verdana, sans-serif;
+  font-size: 35px;
+  position: relative;
+  top: 8.5em;
+  left: 15em;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes blink {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
