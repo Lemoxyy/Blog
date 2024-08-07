@@ -54,3 +54,6 @@ document.addEventListener("DOMContentLoaded", function () {
     document.documentElement.style.cursor = "none";
   }
 });
+function openWebsite() {
+  window.open("https://www.instagram.com/lemoxyy__/", "_blank");
+}
