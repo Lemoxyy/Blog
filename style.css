@@ -70,10 +70,9 @@ a {
 }
 @media (pointer: coarse) {
   body {
-    cursor: none;
+    cursor: none !important;
   }
 }
-
 @media (max-width: 768px) {
   .hamburger {
     display: block;

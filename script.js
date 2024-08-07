@@ -48,3 +48,9 @@ a.forEach((item) => {
     cursor.classList.remove("hover");
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  if ("ontouchstart" in window || navigator.maxTouchPoints) {
+    document.documentElement.style.cursor = "none";
+  }
+});
