@@ -58,20 +58,20 @@ function openWebsite() {
   window.open("https://www.instagram.com/lemoxyy__/", "_blank");
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  const text = `This website hasn't been completed yet.`;
-  const typingText = document.getElementById("development");
-  let index = 0;
+// document.addEventListener("DOMContentLoaded", function () {
+//   const text = `This website hasn't been completed yet.`;
+//   const typingText = document.getElementById("development");
+//   let index = 0;
 
-  function type() {
-    if (index < text.length) {
-      typingText.textContent += text.charAt(index);
-      index++;
-      setTimeout(type, 100); // Adjust typing speed here (milliseconds)
-    } else {
-      typingText.textContent += " "; // Add space to make room for cursor
-      typingText.appendChild(cursor);
-    }
-  }
-  type();
-});
+//   function type() {
+//     if (index < text.length) {
+//       typingText.textContent += text.charAt(index);
+//       index++;
+//       setTimeout(type, 100); // Adjust typing speed here (milliseconds)
+//     } else {
+//       typingText.textContent += " "; // Add space to make room for cursor
+//       typingText.appendChild(cursor);
+//     }
+//   }
+//   type();
+// });
